@@ -3,218 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 2</title>
+    <title>Activity 2 - CSS Login Page</title>
 </head>
 <style>
 
-    * {
+html, body {
+    margin:0px;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Hide scrollbars */
+    background-color: rgb(245, 245, 245);
+}
+
+*   {
     box-sizing: border-box;
     }
 
-    body{
-        background: linear-gradient(to top right, #000066 0%, #003399 100%);
-        font-family: "Helvetica", Sans-Serif;
-        color: #7c7c7c;
-        height: 100vh;
-        
-    }
+.Main-whole-body
+{
 
-    h1
-    {   
-        font-size: 23px;
-        letter-spacing: -0.2px;
-        word-spacing: 1px;
-        color: #000000;
-        font-weight: 700;
-        text-decoration: none;
-        font-style: normal;
-        font-variant: normal;
-        text-transform: none;
-    }
+}
 
+.column35
+{
+    width: 35%;
+    height: 1080px;
+    float: left;
+    padding: 20px;
+    padding-top: 10%;
+    top: 40%;
 
-    .column50{
-        float: left;
-        width: 50%;
-        padding: 20px;
-        height: 450px;
+    background-image: url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: rgb(7, 27, 43);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: #ffffff;
+}
 
-    }
+.column65
+{
+    height: 1080px;
+    width: 65%;
+    float: left;
+    padding: 20px;
+    padding-top: 15%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    
+    background-image: url(https://templarchambers.com/wp-content/uploads/2019/06/Vecteezy-16-7540-15.jpg);
+    background-color: rgba(255, 255, 255, 0.562);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #06061b;
 
-    .column70{
-        float: left;
-        width: 70%;
-        padding: 20px;
-        height: 450px;
-        border-top-left-radius: 60px 60px;
-        padding-top: 5%;
+}
 
-    }
-
-    .column30{
-        float: left;
-        width: 30%;
-        padding: 20px;
-        height: 450px;
-        border-bottom-right-radius: 60px 60px;
-
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        margin-left: 800px;
-        margin-right: 800px;
-        border-radius: 50px;
-        background-color: white;
-
-    }
-    div{
-        display: block;
-    }
-
-    #maincolumn{
-        margin: 10%;
-    }
-
-    .form50{
-        width: 50%;
-        float: left;
-        padding: 5px;
-    }
-
-    .formfull
-    {
-        padding: 5px;
-
-    }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#socmed{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
-    input{
-        border-style: solid;
-        border-color: rgba(201, 201, 201, 0.322);
-        border-width: 1px;
-        border-radius: 2px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding: 5px;
-        width: 100%;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 
-    textarea{
-        border-style: solid;
-        border-color: rgba(201, 201, 201, 0.322);
-        border-width: 1px;
-        border-radius: 2px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding: 5px;
-        width: 100%;
-    }
+.btn{
 
-    label{
-        font-size: 10px;
-        color: rgb(49, 49, 49);
-    }
+font-family: Roboto Condensed;
+font-weight: 0;
+font-size: 18px;
+color: #fff;
+background-color: #00293d;
+padding: 10px 45px;
+border: solid #0066cc00 0px;
+box-shadow: none;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
 
-    ::placeholder {
-        color: rgba(219, 219, 219, 0.473);
-        opacity: 1; /* Firefox */
-        font-size: 10px;
-        align-self: center;}
+}
 
-     .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        }
+.btn:hover{
 
-    .btn
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        line-height: 1;
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 14px;
-        border-radius: 5px;
-        width: 120px;
-        height: 30px;
-        font-weight: bold;
-        transition: 0.3s;
-        background-color: #1976d2;
-    }
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 0px #0066cc;
+}
 
-    .btn:hover{
-        opacity: .7;
-    }
+.inputsize100
+{
+    width: 40%;
+    display: block;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.404);
+}
+
 
 </style>
 
 <body>
-<!---Menu Header-->
-    <section>
-        <div style="display: block;">
-            <div style="float: left; width: 30%;">
+<!-- Menu 
+<nav class="menu" name="main-menu">
+    <div name="menu-logo-column">
+        <a href="index.html">
+             <img src="https://rsvprojects.com/wp-content/uploads/2022/09/RSV-Logo-2022-03.png" style="width: 200px;">
+        </a>
+    </div>
 
-            </div>
-            <div style="float: left; width: 70%;">
+    <div name="menu-column1">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+     
+</nav> -->
 
-            </div>
+<!-- Body Column login with 2 columns -->
+<div name="Main-whole-body" class="Main-whole-body">        
+    <div name="intercolumn" >
+        <div name="main-column1" class="column35">
+            <a href="index.html">
+                <img src="https://rsvprojects.com/wp-content/uploads/2022/09/RSV-Logo-2022-03.png" style="width: 200px;" class="center">
+           </a>
+
+           <H1 style="text-align: center; font-size: 50px; line-height: 95%;">Welcome to<br>RSV Projects!</H1>
+           <p style="text-align: center;">To Keep Connected with us please<br>login with your personal info</p>
         </div>
 
-    </section>
-
-<!-- Form -->
-    <section>
-        <div id="maincolumn" style="display: block;">
-            <div class="row">
-                <div class="column70" style="background-color:#ffffff;">
-                   
-                    <form class="generated-form"  method="GET" action="submit.php"  target="_self">
-                        <h2>Let’s make something great!</h2>
-                        <p style="font-size: 13px;"> If you would like to find out more about what RSV Projects can do for your business or to receive a project quote, don’t hesitate to contact us.</p>
-                        
-                        <div class="form50">
-                            <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" name="fname" value=""><br>
-                        </div>
-                        
-                        <div class="form50">
-                            <label for="lname">Last name:</label><br>
-                            <input type="text" id="lname" name="lname" value=""><br>
-                        </div>
-                        
-                        <div class="formfull">
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="email" value="">
-                        </div>
-
-                         <div class="formfull">
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" value="" rows="2">
-                            </textarea>
-                        </div>
-                        
-                        <input type="submit" value="Submit" class="btn">
-                      </form>
-    
-    
-                </div>
-<!-- 2nd Column -->
-                <div class="column30" style="background-color:#ffffff;">
-                    <img src="https://rsvprojects.com/wp-content/uploads/2022/09/RSV-Logo-2022-03.png" style="width: 100%;" class="center">
-                </div>
+        <div name="main-column2" class="column65">
+            <H2 style="margin-bottom: 50px;">Sign in to your account</H2>
+            <div id="socmed" style="margin-bottom: 50px;">
+                <a href="https://www.facebook.com/raymonds.valenzuela/" target="_blank"><img src="/files/Icons/fb.png"></a>
+                <a href="https://www.linkedin.com/in/raymondsvalenzuela/" target="_blank"><img src="/files/Icons/lkd.png"></a>
+                <a href="www.rsvprojects.com" target="_blank"><img src="/files/Icons/web.png"></a>
             </div>
-            </div>
-    </section>
+            <form>
+                <p style="padding-bottom: 40px;">or use your email account</p>
+                <input type="text" class="inputsize100" placeholder="Username">
+                <input type="password" class="inputsize100" placeholder="Password"><br>
 
-    <section>
-        <p style="color: #ffffff; text-align: center; font-size: 10px;">© Copyright 2022. RSV Projects. All rights reserved.</p>
-    </section>
-    
+                <p>Forgot Your Password?</p><br>
+                <center><button type="submit" class="btn" value="submit">Login</button></center>
+            </form>
+            <p>Don't Have an account? <strong>Register</strong></p>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>
